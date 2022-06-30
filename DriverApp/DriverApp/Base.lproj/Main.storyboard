@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Homevc-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Homevc" customModule="DriverApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="igh-Bp-QR8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="igh-Bp-QR8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Zt-Yt-OvC"/>
+                            <constraint firstAttribute="bottom" secondItem="igh-Bp-QR8" secondAttribute="bottom" id="TDb-1x-S1K"/>
+                            <constraint firstItem="igh-Bp-QR8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cNj-hh-r5d"/>
+                            <constraint firstItem="igh-Bp-QR8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ec9-eu-MXz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="igh-Bp-QR8" id="0hj-aX-7ho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="91.741071428571431"/>
+        </scene>
+        <!--OrderVC-->
+        <scene sceneID="l79-3H-mXB">
+            <objects>
+                <viewController storyboardIdentifier="OrderVC" id="1mY-SR-UJT" customClass="OrderVC" customModule="DriverApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hSd-VS-ucb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Recevied an Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndG-i7-G3U">
+                                <rect key="frame" x="20" y="64" width="262.5" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5tR-dE-Q0F">
+                                <rect key="frame" x="20" y="134" width="374" height="225"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AUA-g8-zXq">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0P-TC-Qem">
+                                                <rect key="frame" x="0.0" y="0.0" width="108.5" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mohamed Madney" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dW1-V3-GJ6">
+                                                <rect key="frame" x="0.0" y="31" width="170" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8HZ-kd-j1a">
+                                        <rect key="frame" x="0.0" y="85" width="255" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0T-kv-sbw">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egypt, Alexandria , Montaza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epK-fx-26x">
+                                                <rect key="frame" x="0.0" y="31" width="255" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wlO-0j-kEq">
+                                        <rect key="frame" x="0.0" y="170" width="177.5" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Descrption:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iep-dE-LZt">
+                                                <rect key="frame" x="0.0" y="0.0" width="151.5" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Products To Fix Car" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eed-yX-N4m">
+                                                <rect key="frame" x="0.0" y="31" width="177.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="122" translatesAutoresizingMaskIntoConstraints="NO" id="xTw-6E-gYa">
+                                <rect key="frame" x="76.5" y="791" width="261" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0o-QN-jDs">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Accept"/>
+                                        <connections>
+                                            <action selector="acceptBtn:" destination="1mY-SR-UJT" eventType="touchUpInside" id="RqC-IW-QQA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAc-yr-pvf">
+                                        <rect key="frame" x="191.5" y="0.0" width="69.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Reject"/>
+                                        <connections>
+                                            <action selector="Reject:" destination="1mY-SR-UJT" eventType="touchUpInside" id="08P-ud-L0A"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oRa-zu-6bp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oRa-zu-6bp" firstAttribute="trailing" secondItem="5tR-dE-Q0F" secondAttribute="trailing" constant="20" id="AhT-1B-hCs"/>
+                            <constraint firstItem="5tR-dE-Q0F" firstAttribute="top" secondItem="ndG-i7-G3U" secondAttribute="bottom" constant="40" id="Fie-ZK-ugv"/>
+                            <constraint firstItem="ndG-i7-G3U" firstAttribute="leading" secondItem="oRa-zu-6bp" secondAttribute="leading" constant="20" id="KBn-V8-lv7"/>
+                            <constraint firstItem="ndG-i7-G3U" firstAttribute="top" secondItem="oRa-zu-6bp" secondAttribute="top" constant="20" id="mSa-ur-Sed"/>
+                            <constraint firstItem="xTw-6E-gYa" firstAttribute="centerX" secondItem="hSd-VS-ucb" secondAttribute="centerX" id="uit-6A-VU8"/>
+                            <constraint firstItem="5tR-dE-Q0F" firstAttribute="leading" secondItem="oRa-zu-6bp" secondAttribute="leading" constant="20" id="yuu-SF-XtO"/>
+                            <constraint firstItem="oRa-zu-6bp" firstAttribute="bottom" secondItem="xTw-6E-gYa" secondAttribute="bottom" constant="40" id="zao-GP-tV1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="orderDescrptions" destination="eed-yX-N4m" id="Pq5-Rl-8cT"/>
+                        <outlet property="orderLocation" destination="epK-fx-26x" id="1XA-37-a2m"/>
+                        <outlet property="orderName" destination="dW1-V3-GJ6" id="fdA-yW-pFG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zcb-56-ZXN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
